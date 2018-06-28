@@ -17,21 +17,6 @@ import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    class Movie {
-        var id: String
-        var name: String
-        var released: Date
-        var genere: String
-        
-        init(id:String, name:String, released:Date, genere:String) {
-            self.id = id
-            self.name = name
-            self.released = released
-            self.genere = genere
-        }
-    }
-    
 
     var window: UIWindow?
 

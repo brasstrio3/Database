@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import Parse
 
 class TableViewController: UIViewController {
 
-    /*func loadMovies() {
-        let query = PFQuery(classname:"movie")
+    class Movie {
+        var id: String
+        var name: String
+        var released: Date
+        var genere: String
+        
+        init(id:String, name:String, released:Date, genere:String) {
+            self.id = id
+            self.name = name
+            self.released = released
+            self.genere = genere
+        }
+    }
+    
+    func loadMovies() {
+        let query = PFQuery(className: "movie")
         //query.fromLocalDatastore
         query.whereKeyExists("objectId")
         query.findObjectsInBackground { (objects, error) in
@@ -26,7 +41,7 @@ class TableViewController: UIViewController {
                 print(error?.localizedDescription ?? String())
             }
         }
-    }*/
+    }
     
     /*
     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
