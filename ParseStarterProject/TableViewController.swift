@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UIViewController {
 
-    func loadmOVIES() {
+    /*func loadMovies() {
         let query = PFQuery(classname:"movie")
         //query.fromLocalDatastore
         query.whereKeyExists("objectId")
@@ -26,8 +26,9 @@ class TableViewController: UIViewController {
                 print(error?.localizedDescription ?? String())
             }
         }
-    }
+    }*/
     
+    /*
     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     
     let formatter = DateFormatter()
@@ -43,7 +44,8 @@ class TableViewController: UIViewController {
     cell.textLabel?.text = Movies[indexPath.row].name + " /" + Movies[indexPath.row].genere + " / " + myStringafd
     
     return cell
-    
+ */
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
