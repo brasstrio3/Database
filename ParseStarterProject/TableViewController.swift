@@ -28,7 +28,21 @@ class TableViewController: UIViewController {
         }
     }
     
+    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    
+    let myString = formatter.string(from: Movies[indexPath.row].released)
+    
+    let yourDate = formatter.date(from: myString)
+    
+    formatter.dateFormat = "dd-MMM-yyyy"
+    let myStringafd = formatter.string(from: yourDate!)
+    
+    cell.textLabel?.text = Movies[indexPath.row].name + " /" + Movies[indexPath.row].genere + " / " + myStringafd
+    
+    return cell
     
     override func viewDidLoad() {
         super.viewDidLoad()

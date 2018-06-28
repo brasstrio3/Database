@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.genere = genere
         }
     }
+    
 
     var window: UIWindow?
 
