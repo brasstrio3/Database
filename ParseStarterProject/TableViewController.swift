@@ -10,20 +10,8 @@ import UIKit
 import Parse
 
 class TableViewController: UIViewController {
-
-    class Movie {
-        var id: String
-        var name: String
-        var released: Date
-        var genere: String
-        
-        init(id:String, name:String, released:Date, genere:String) {
-            self.id = id
-            self.name = name
-            self.released = released
-            self.genere = genere
-        }
-    }
+    
+    var Movies: [Movie] = []
     
     func loadMovies() {
         let query = PFQuery(className: "movie")
@@ -43,8 +31,8 @@ class TableViewController: UIViewController {
         }
     }
     
-    /*
-    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -59,7 +47,8 @@ class TableViewController: UIViewController {
     cell.textLabel?.text = Movies[indexPath.row].name + " /" + Movies[indexPath.row].genere + " / " + myStringafd
     
     return cell
- */
+    }
+ 
  
     override func viewDidLoad() {
         super.viewDidLoad()
