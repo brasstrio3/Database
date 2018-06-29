@@ -20,8 +20,8 @@
 		8374E1041D9AB24200E7A0B7 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8374E1031D9AB24200E7A0B7 /* libstdc++.6.tbd */; };
 		C39BDA6F20E5653200CB13B5 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BDA6E20E5653200CB13B5 /* LoggedInViewController.swift */; };
 		C39BDA7120E5658C00CB13B5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BDA7020E5658C00CB13B5 /* Extensions.swift */; };
-		C39BDA7320E5730600CB13B5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BDA7220E5730600CB13B5 /* TableViewController.swift */; };
 		C39BDA7520E6A29900CB13B5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BDA7420E6A29900CB13B5 /* Movie.swift */; };
+		C39BDA7720E6A41500CB13B5 /* MovieTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39BDA7620E6A41500CB13B5 /* MovieTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		8374E1031D9AB24200E7A0B7 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		C39BDA6E20E5653200CB13B5 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoggedInViewController.swift; path = ../LoggedInViewController.swift; sourceTree = "<group>"; };
 		C39BDA7020E5658C00CB13B5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		C39BDA7220E5730600CB13B5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		C39BDA7420E6A29900CB13B5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C39BDA7620E6A41500CB13B5 /* MovieTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			children = (
 				C39BDA6E20E5653200CB13B5 /* LoggedInViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
-				C39BDA7220E5730600CB13B5 /* TableViewController.swift */,
+				C39BDA7620E6A41500CB13B5 /* MovieTableTableViewController.swift */,
 				C39BDA7420E6A29900CB13B5 /* Movie.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				C39BDA7020E5658C00CB13B5 /* Extensions.swift */,
@@ -196,11 +196,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39BDA7720E6A41500CB13B5 /* MovieTableTableViewController.swift in Sources */,
 				C39BDA6F20E5653200CB13B5 /* LoggedInViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				C39BDA7520E6A29900CB13B5 /* Movie.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
-				C39BDA7320E5730600CB13B5 /* TableViewController.swift in Sources */,
 				C39BDA7120E5658C00CB13B5 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
