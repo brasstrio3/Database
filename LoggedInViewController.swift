@@ -11,7 +11,17 @@ import Parse
 
 class LoggedInViewController: UIViewController {
 
+    var tasks: [taskList] = []
+    
+    struct taskList {
+        var goal: String
+    }
+    
     @IBOutlet var btnLogout: UIView!
+    @IBOutlet weak var btnSubmit: UIButton!
+    @IBOutlet weak var txtTask1: UITextField!
+    @IBOutlet weak var btnShowTasks: UIButton!
+    @IBOutlet weak var txtDisplayText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +52,16 @@ class LoggedInViewController: UIViewController {
         self.present(viewController, animated: true, completion: nil)
     }
     
+    @IBAction func printWords(_ sender: Any) {
+        
+        var task = taskList(goal: txtTask1.text!)
+        
+        tasks.append(task)
+        txtDisplayText.text = txtTask1.text
+        txtTask1.text = ""
+        print(tasks)
+    }
+    
     @IBAction func logoutOfApp(_ sender: UIButton) {
         let sv = UIViewController.displaySpinner(onView: self.view)
         PFUser.logOutInBackground { (error: Error?) in
@@ -56,7 +76,8 @@ class LoggedInViewController: UIViewController {
                 }
                 
             }
-        }    }
+        }
+    }
     
     /*
     // MARK: - Navigation

@@ -102,11 +102,36 @@
                                     <action selector="logoutOfApp:" destination="Ykw-CY-JHb" eventType="touchUpInside" id="G0K-Nh-WCi"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Task to do" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-vh-FIL">
+                                <rect key="frame" x="66" y="95" width="243" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJu-DL-8e1">
+                                <rect key="frame" x="142" y="166" width="90" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="printWords:" destination="Ykw-CY-JHb" eventType="touchUpInside" id="OlK-HH-aW5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ALH-GP-4Qb">
+                                <rect key="frame" x="67" y="393" width="240" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="btnLogout" destination="vau-dn-FAj" id="Ki1-XU-EjT"/>
+                        <outlet property="btnSubmit" destination="AJu-DL-8e1" id="HDl-ce-EbR"/>
+                        <outlet property="txtDisplayText" destination="ALH-GP-4Qb" id="rgr-lr-fNz"/>
+                        <outlet property="txtTask1" destination="Kg2-vh-FIL" id="C0o-bC-ePY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qo0-5b-pSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
